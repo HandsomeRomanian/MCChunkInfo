@@ -41,6 +41,10 @@
             this.btnCalculate = new System.Windows.Forms.Button();
             this.lblFile = new System.Windows.Forms.Label();
             this.lblFileName = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openMapViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbChunkX
@@ -157,6 +161,31 @@
             this.lblFileName.TabIndex = 11;
             this.lblFileName.Text = "File:";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(391, 24);
+            this.menuStrip1.TabIndex = 13;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // menuToolStripMenuItem
+            // 
+            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openMapViewToolStripMenuItem});
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.menuToolStripMenuItem.Text = "Menu";
+            // 
+            // openMapViewToolStripMenuItem
+            // 
+            this.openMapViewToolStripMenuItem.Name = "openMapViewToolStripMenuItem";
+            this.openMapViewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openMapViewToolStripMenuItem.Text = "Open MapView";
+            this.openMapViewToolStripMenuItem.Click += new System.EventHandler(this.openMapViewToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -175,8 +204,12 @@
             this.Controls.Add(this.tbPlayerX);
             this.Controls.Add(this.tbChunkY);
             this.Controls.Add(this.tbChunkX);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Minecraft Chunk ToolKit";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,6 +230,9 @@
         private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.Label lblFile;
         private System.Windows.Forms.Label lblFileName;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openMapViewToolStripMenuItem;
     }
 }
 
